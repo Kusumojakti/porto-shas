@@ -4,6 +4,7 @@ import React, { useEffect } from "react";
 import { Disclosure, DisclosureButton } from "@headlessui/react";
 import { Bars3Icon, MoonIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import { gsap } from "gsap";
+import { motion } from "framer-motion";
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(" ");
@@ -85,18 +86,98 @@ const Navbar = () => {
                         <div className="box"></div>
                     </div>
                     <div className="nav-main__content opacity-0 invisible">
-                        <h4 className="text-white">Navigation</h4>
+                        <div>
+                            <h2 className="text-black font-BigShoulders font-bold text-3xl tracking-wide">
+                                CATCH ME ON SOCIAL MEDIA
+                            </h2>
+                            <div className="flex justify-start gap-8">
+                                <motion.button
+                                    whileHover={{ scale: 1.2 }}
+                                    onHoverStart={(event) => {}}
+                                    onHoverEnd={(event) => {}}
+                                >
+                                    <a
+                                        href="https://www.instagram.com/aqsha.kusumojakti_/"
+                                        target="_blank"
+                                    >
+                                        <img
+                                            src=".\assets\icons\instagram (2).png"
+                                            alt="instagram logo"
+                                            width={30}
+                                            height={30}
+                                            className="mt-4"
+                                        />
+                                    </a>
+                                </motion.button>
+                                <motion.button
+                                    whileHover={{ scale: 1.2 }}
+                                    onHoverStart={(event) => {}}
+                                    onHoverEnd={(event) => {}}
+                                >
+                                    <a
+                                        href="https://www.linkedin.com/in/aqsha-kusumojakti/"
+                                        target="_blank"
+                                    >
+                                        <img
+                                            src=".\assets\icons\linkedin.png"
+                                            alt="linkedin logo"
+                                            width={30}
+                                            height={30}
+                                            className="mt-4"
+                                        />
+                                    </a>
+                                </motion.button>
+                                <motion.button
+                                    whileHover={{ scale: 1.2 }}
+                                    onHoverStart={(event) => {}}
+                                    onHoverEnd={(event) => {}}
+                                >
+                                    <a
+                                        href="https://github.com/Kusumojakti"
+                                        target="_blank"
+                                    >
+                                        <img
+                                            src=".\assets\icons\github-logo.png"
+                                            alt="github logo"
+                                            width={30}
+                                            height={30}
+                                            className="mt-4"
+                                        />
+                                    </a>
+                                </motion.button>
+                            </div>
+                        </div>
+
                         <ul>
-                            <li>
-                                <a href="#home">Home</a>
+                            <li className="py-2">
+                                <a
+                                    href="#home"
+                                    className="font-BigShoulders font-bold text-4xl tracking-wide"
+                                >
+                                    HOME
+                                </a>
                             </li>
-                            <li>
-                                <a href="#projects">Projects</a>
+                            <li className="py-2">
+                                <a
+                                    href="#projects"
+                                    className="font-BigShoulders font-bold text-4xl tracking-wide"
+                                >
+                                    PROJECT
+                                </a>
                             </li>
-                            <li>
-                                <a href="#contact">Contact</a>
+                            <li className="py-2">
+                                <a
+                                    href="#contact"
+                                    className="font-BigShoulders font-bold text-4xl tracking-wide"
+                                >
+                                    CONTACT
+                                </a>
                             </li>
                         </ul>
+
+                        {/* <div>
+                            <h4>or you can check my resume</h4>
+                        </div> */}
                     </div>
                 </div>
             </div>
