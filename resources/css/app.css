@@ -80,3 +80,46 @@
 .nav-anim .bar3 {
     transform: rotate(45deg) translate(-7px, -8px);
 }
+
+@media (max-width: 640px) {
+    .nav-container {
+        padding: 2rem;
+    }
+
+    .nav-icon {
+        left: 1rem;
+        top: 1rem;
+    }
+
+    .nav-main .box-wrapper .box {
+        width: 100vw;
+    }
+
+    .nav-main__content {
+        top: 10rem;
+        left: 1rem;
+        width: 90vw;
+        padding: 2rem;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+    }
+
+    .nav-main .mobile-logo {
+        top: 2rem;
+        left: 1rem;
+        width: 100px; /* adjust as needed */
+    }
+
+    .nav-main__content h2 {
+        font-size: 1.5rem;
+    }
+
+    .nav-main__content ul li a {
+        font-size: 2rem;
+    }
+
+    .nav-main__content .flex {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+}
